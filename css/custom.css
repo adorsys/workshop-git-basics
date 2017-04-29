@@ -1,0 +1,21 @@
+#title-image {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+code.nowrap {
+  white-space: nowrap;
+}
+
+address.author {
+  margin-top:10rem;
+}
+
+a>h2.demo-code {
+  margin-top: 10rem;
+}
+
+img.small {
+  width: 50%
+}

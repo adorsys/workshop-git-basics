@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Git Basics</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/github.css">
+
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Git Basics</h1>
+        <img id="title-image" src="assets/git.png" alt="git logo" />
+        <address class="author"><i>Roman Ataman / adorsys GmbH / 2017</i></address>
+      </section>
+      <section>
+        <h1>Was ist Versionskontrolle? (VCS)</h1>
+      </section>
+      <section>
+        <section>
+          <h1>Was ist Git?</h1>
+          <ul>
+            <li class="fragment">Entwickelt von Linus Torvalds</li>
+            <li class="fragment">War unzufrieden mit bestehenden Systemen</li>
+            <li class="fragment">Prototyp innerhalb XXX</li>
+            <li class="fragment">Self-Hosted innerhalb XXX</li>
+            <li class="fragment">In Verwendung für Linux innerhalb XXX</li>
+            <li class="fragment">Heute De-Facto-Standard</li>
+          </ul>
+        </section>
+        <section>
+          <h1>DVCS</h1>
+          <ul>
+            <li class="fragment">Größter Unterschied zu bestehenden Systemen</li>
+            <li class="fragment">Komplette Historie lokal</li>
+            <li class="fragment">Funktioniert offline</li>
+            <li class="fragment">Kein Master/Slave mehr per Design</li>
+            <li class="fragment">Nur noch per Konvention</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Vorteile</h1>
+          <ul>
+            <li class="fragment">GitHub</li>
+            <li class="fragment">Performance, Stabilität, Offlienfähigkeit</li>
+            <li class="fragment">sehr einfaches/günstiges Branchen</li>
+            <li class="fragment">Quasi-Standard</li>
+            <li class="fragment">Extrem mächtig</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Nachteile</h1>
+          <ul>
+            <li class="fragment">Sehr technisch, Linuxlastig (CLI)</li>
+            <li class="fragment">Interface teilweise inkonsistent</li>
+            <li class="fragment">Einstiegshürde</li>
+            <li class="fragment">Extrem mächtig</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Domain</h1>
+        </section>
+        <section>
+          <h1>Clone</h1>
+        </section>
+        <section>
+          <h1>Commit</h1>
+        </section>
+        <section>
+          <h1>Master</h1>
+        </section>
+        <section>
+          <h1>Branch</h1>
+        </section>
+        <section>
+          <h1>...</h1>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Tools</h1>
+        </section>
+        <section>
+          <h1>Git</h1>
+          Auf OSX per default installiert. Im Terminal:
+          <pre><code>
+~/junk/git-basics-temp master
+❯ git --version
+git version 2.11.0
+          </code></pre>
+          <span class="fragment">Alles mit 2.x ist toll.</span>
+        </section>
+        <section>
+          <h1>Gitup</h1>
+          <p>Git UI mit Live aktualisierung (verwenden wir gleich im Workshop).</p>
+          <a href="https://gitup.co"><img class="small" src="./assets/gitup.png" alt="Gitup UI Example"/></a>
+        </section>
+        <section>
+          <h1>tig (Optional)</h1>
+          <p>Git Commandline UI</p>
+          <a href="https://github.com/jonas/tig"><img class="small" src="./assets/tig.png" alt="Gitup UI Example"/></a>
+        </section>
+        <section>
+          <h1></h1>
+        </section>
+        <section>
+          <h1></h1>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Config</h1>
+          <p>Wir brauchen ein paar wenige sinnvolle defaults, um im Team arbeiten zu können.</p>
+          <pre><code data-code="./snippets/config_first.sh"></code></pre>
+        </section>
+        <section>
+          <h1>Optional: Editor<small>(mit dem man nicht verzweifelt)</small></h1>
+          <ol>
+            <li>vscode.com herunterladen und nach Applications entpacken</li>
+            <li>'code' Command in PATH installieren</li>
+            <li>vscode als Editor konfigurieren</li>
+          </ol>
+        </section>
+        <section>
+          <h1>Optional: Editor<small>Configfile</small></h1>
+          <pre><code data-code="./snippets/config_editor.sh"></code></pre>
+        </section>
+        <section>
+          <h1>Tweaks für OSX</h1>
+          <pre><code data-code="./snippets/config_advanced.sh"></code></pre>
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      history: true,
+      slideNumber: true,
+      center: false,
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [{
+        src: 'plugin/markdown/marked.js'
+      }, {
+        src: 'plugin/markdown/markdown.js'
+      }, {
+        src: 'plugin/notes/notes.js',
+        async: true
+      }, {
+        src: 'plugin/highlight/highlight.js',
+        async: true,
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }, {
+        src: 'plugin/externalcode/externalcode.js',
+        condition: function() {
+          return !!document.querySelector('[data-code]');
+        }
+      }]
+    });
+  </script>
+</body>
+
+</html>

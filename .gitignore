@@ -1,0 +1,7 @@
+node_modules
+.idea
+*.iml
+*.swp
+*.tmp
+.DS_Store
+target/
