@@ -42,9 +42,10 @@
           <ul>
             <li class="fragment">Entwickelt von Linus Torvalds</li>
             <li class="fragment">War unzufrieden mit bestehenden Systemen</li>
-            <li class="fragment">Prototyp innerhalb XXX</li>
-            <li class="fragment">Self-Hosted innerhalb XXX</li>
-            <li class="fragment">In Verwendung für Linux innerhalb XXX</li>
+            <li class="fragment">Start Entwicklung 03.04.05</li>
+            <li class="fragment">Announced 06.04.05</li>
+            <li class="fragment">Self-Hosted 07.04.05</li>
+            <li class="fragment">SCM für Linux 06.06.05</li>
             <li class="fragment">Heute De-Facto-Standard</li>
           </ul>
         </section>
@@ -52,7 +53,7 @@
           <h1>DVCS</h1>
           <ul>
             <li class="fragment">Größter Unterschied zu bestehenden Systemen</li>
-            <li class="fragment">Komplette Historie lokal</li>
+            <li class="fragment">Komplette Historie lokal (self contained)</li>
             <li class="fragment">Funktioniert offline</li>
             <li class="fragment">Kein Master/Slave mehr per Design</li>
             <li class="fragment">Nur noch per Konvention</li>
@@ -71,31 +72,20 @@
         <section>
           <h1>Nachteile</h1>
           <ul>
-            <li class="fragment">Sehr technisch, Linuxlastig (CLI)</li>
+            <li class="fragment">Sehr technisch, linuxlastig (CLI)</li>
             <li class="fragment">Interface teilweise inkonsistent</li>
             <li class="fragment">Einstiegshürde</li>
             <li class="fragment">Extrem mächtig</li>
           </ul>
         </section>
-      </section>
-      <section>
         <section>
-          <h1>Domain</h1>
-        </section>
-        <section>
-          <h1>Clone</h1>
-        </section>
-        <section>
-          <h1>Commit</h1>
-        </section>
-        <section>
-          <h1>Master</h1>
-        </section>
-        <section>
-          <h1>Branch</h1>
-        </section>
-        <section>
-          <h1>...</h1>
+          <h1>Einsatzzweck</h1>
+          <ul>
+            <li>Verwaltung von stabilem Text</li>
+            <li>Wer hat was, wann, warum gemacht?</li>
+            <li>Parallele/konkurrierende Arbeit an Text</li>
+            <li>Parallele Arbeit von vielen Menschen an einem Projekt</li>
+          </ul>
         </section>
       </section>
       <section>
@@ -110,7 +100,7 @@
 ❯ git --version
 git version 2.11.0
           </code></pre>
-          <span class="fragment">Alles mit 2.x ist toll.</span>
+          <span class="fragment">Alles &gt; 2.4 ist toll.</span>
         </section>
         <section>
           <h1>Gitup</h1>
@@ -122,12 +112,6 @@ git version 2.11.0
           <p>Git Commandline UI</p>
           <a href="https://github.com/jonas/tig"><img class="small" src="./assets/tig.png" alt="Gitup UI Example"/></a>
         </section>
-        <section>
-          <h1></h1>
-        </section>
-        <section>
-          <h1></h1>
-        </section>
       </section>
       <section>
         <section>
@@ -138,9 +122,9 @@ git version 2.11.0
         <section>
           <h1>Optional: Editor<small>(mit dem man nicht verzweifelt)</small></h1>
           <ol>
-            <li>vscode.com herunterladen und nach Applications entpacken</li>
+            <li><a href="https://vscode.com">VS Code</a> herunterladen und nach Applications entpacken</li>
             <li>'code' Command in PATH installieren</li>
-            <li>vscode als Editor konfigurieren</li>
+            <li><code>vscode</code> als Editor konfigurieren</li>
           </ol>
         </section>
         <section>
@@ -151,6 +135,71 @@ git version 2.11.0
           <h1>Tweaks für OSX</h1>
           <pre><code data-code="./snippets/config_advanced.sh"></code></pre>
         </section>
+      </section>
+      <section>
+        <section>
+          <h1>Themen</h1>
+        </section>
+        <section>
+          <h1>Repository</h1>
+        </section>
+        <section>
+          <h1>Commit</h1>
+        </section>
+        <section>
+          <h2>Gute Commit Messages</h2>
+          <ol>
+            <li class="fragment">Betreff (~50 Zeichen max, imperativ)</li>
+            <li class="fragment">Leerzeile</li>
+            <li class="fragment">Detailbeschreibung (~72 Zeichen max / Zeile)</li>
+            <li class="fragment">Am Ende links auf JIRA</li>
+          </ol>
+        </section>
+        <section>
+          <h1>Index/Staging Area</h1>
+        </section>
+        <section>
+          <h1>Log</h1>
+        </section>
+        <section>
+          <h1>Branches</h1>
+        </section>
+        <section>
+          <h1>Merge</h1>
+        </section>
+        <section>
+          <h1>Konflikte</h1>
+        </section>
+        <section>
+          <h1>Tags</h1>
+        </section>
+        <section>
+          <h1>Clone</h1>
+        </section>
+        <section>
+          <h1>Pull/Fetch</h1>
+        </section>
+        <section>
+          <h1>Push</h1>
+        </section>
+        <section>
+          <h1>Remotes/Tracking Branches</h1>
+        </section>
+        <section>
+          <h1>Extras</h1>
+          <ul>
+            <li class="fragment">Rebase</li>
+            <li class="fragment">Resetten</li>
+            <li class="fragment">Merge-Requests</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <h1>Entwicklungsworkflows</h1>
+        <ul>
+          <li class="fragment"><a href="http://nvie.com/posts/a-successful-git-branching-model/">Git Flow</a></li>
+          <li class="fragment"><a href="https://commonflow.org">Git Common Flow</a></li>
+        </ul>
       </section>
     </div>
   </div>
