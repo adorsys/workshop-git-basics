@@ -19,3 +19,8 @@ a>h2.demo-code {
 img.small {
   width: 50%
 }
+
+.footnote {
+  font-size: smaller;
+  font-style: italic;
+}
